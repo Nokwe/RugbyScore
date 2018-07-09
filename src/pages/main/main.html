@@ -1,0 +1,66 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="bg" >
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> SCORE BOARD</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<!-- making columns -->
+
+
+  <!-- 1st colunm -->
+  <div class="cont1">
+    <div class ="teamA" (click)="choose(1)">
+      <h2>home Team</h2>
+      <ion-card>  <ion-label>{{teamA}}</ion-label>  </ion-card>
+      <ion-card>
+<div class ="score">
+    <h2><ion-label align="center">{{scoreA}}</ion-label> </h2>
+  <br><br><br>
+</div>
+      
+  
+  </ion-card>
+</div>
+    
+<!-- 2nd colunm -->
+    <div class="teamB"  (click)="choose(2)" >
+      <h2>Away Team</h2>
+      <ion-card>  <ion-label>{{teamB}}</ion-label>  </ion-card>
+      <ion-card>
+          <div class="score">
+              <h1><ion-label align="center" >{{scoreB}}</ion-label></h1> 
+              <br><br><br>
+            </div>
+  </ion-card>
+  
+</div>
+<br>
+<br>
+
+
+  </div><br><br>
+  <div align="center">
+      <button color ="light" class="butto" ion-button clear (click)="methordTry()">TRY</button>
+      <button color ="light"ion-button outline class="undo"><ion-icon ios="ios-undo" md="md-undo" (click)="undoTry()"></ion-icon> </button><br>
+
+    <button color ="light" class="button" ion-button clear (click) ="methordPenalty()">PENALTY</button>
+
+      <button color ="light" ion-button outline class="undo"><ion-icon ios="ios-undo" md="md-undo" (click)="undoPenalty()"></ion-icon> </button><br>
+  
+      <button color ="light" ion-button outline clear class="button" ion-button (click)="methordconvesion()">CONVESION</button>
+      <button color ="light" ion-button outline class="undo"><ion-icon ios="ios-undo" md="md-undo" (click)="undoConvesion()"></ion-icon> </button><br>
+
+      <button color ="light" ion-button outline class="button1" ion-button (click)="methordReset()">RESET</button>
+  
+ </div>
+</ion-content>

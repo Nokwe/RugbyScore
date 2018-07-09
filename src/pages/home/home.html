@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="t">
+    <ion-title>
+      RUGBY WORLD
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content align="center"class="bg">
+  <div align="center">
+  
+  
+  </div>
+  <br>
+  <br>
+
+ <div class ="e">
+   <ion-item class="text">
+   <ion-label floating >Home Team</ion-label>
+   <ion-input type="text"  [(ngModel)]="teamA"></ion-input>
+
+</ion-item>
+
+<h1 align="center"> vs</h1>
+
+<ion-item class="text">
+    <ion-label floating >Away Team</ion-label>
+    <ion-input type="text"  [(ngModel)]="teamB"></ion-input>
+ 
+ </ion-item>
+</div>
+<br>
+
+<button class = "button" (click)="mainpage()" ion-button block>Start</button>
+
+</ion-content>

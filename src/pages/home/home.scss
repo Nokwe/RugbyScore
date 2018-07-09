@@ -1,0 +1,32 @@
+page-home {
+    .button{
+        
+        background-color: rgb(4, 4, 39);
+     
+    }
+
+    
+    .bg{
+       background-image: url("../../assets/imgs/Capture3.PNG");
+        
+     //background:rgb(212,212,212);
+background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    } 
+    
+    img{
+        z-index:-1;
+    }
+    .text{
+        background:whitesmoke;
+        opacity: 900px;
+    }
+
+    
+  .e{
+      margin-top: 55px;
+  }
+}
+   
+
